@@ -1,9 +1,6 @@
 package me.lucasfelix.diningphilosophers.gui;
 
 import static me.lucasfelix.diningphilosophers.concurrence.PhilosopherState.THINKING;
-
-import com.sun.glass.ui.PlatformAccessible;
-
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -34,7 +31,7 @@ public class Main extends Application {
 
 	public static Philosopher philosophers[] = new Philosopher[5];
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		for (int i = 0; i < 5; i++) {
 			states.add(THINKING);
 		}
